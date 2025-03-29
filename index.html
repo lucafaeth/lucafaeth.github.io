@@ -115,6 +115,19 @@
       width: 22px;
       height: 26px;
       object-fit: contain;
+      transition: opacity 0.3s ease;
+    }
+
+    .white {
+        opacity: 0;
+    }
+
+    .social:hover .white {
+        opacity: 1; /* Show white logo on hover */
+    }
+
+    .social:hover .default {
+        opacity: 0; /* Hide the original logo on hover */
     }
 
   </style>
@@ -204,6 +217,7 @@
       <div id="dash" onclick="navigate(this.id)" class="social dash">
         <span class="icon">
           <img src="icons/DASH.png" alt="DASH" class="custom-icon">
+          <img src="icons/WDASH.png" alt="DASH" class="custom-icon white">
         </span>
       </div>
 
