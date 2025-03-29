@@ -98,6 +98,20 @@
     .social:hover {
       color: #fff;
     }
+
+    .github:hover {
+      background-color: #333;
+    }
+
+    .dash:hover {
+      background-color: #0077b6;
+    }
+
+    .custom-icon {
+      width: 24px;
+      height: 24px;
+    }
+
   </style>
 
 </head>
@@ -108,11 +122,11 @@
 
     <div class="wrapper">
 
-      <!-- Start blog Icon -->
+      <!-- Start blog Icon
       <div id="blog" onclick="navigate(this.id)" class="social blog">
         <span class="icon"><i class="fa-solid fa-blog"></i></span>
       </div>
-      <!-- End blog Icon -->
+      End blog Icon -->
 
       <!-- Start email Icon -->
       <div id="email" onclick="navigate(this.id)" class="social email">
@@ -174,6 +188,22 @@
       </div>
       End telegram Icon -->
 
+      <!-- Start New Links & Icons -->
+
+      <!-- GitHub Icon -->
+      <div id="github" onclick="navigate(this.id)" class="social github">
+        <span class="icon"><i class="fab fa-github"></i></span>
+      </div>
+
+      <!-- DASH Custom Icon -->
+      <div id="dash" onclick="navigate(this.id)" class="social dash">
+        <span class="icon">
+          <img src="DASH.png" alt="DASH" class="custom-icon">
+        </span>
+      </div>
+
+    </div>
+
     </div>
 
 
@@ -218,6 +248,13 @@
         else if (id === "telegram") {
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
         }
+        else if (id === "github") {
+          window.open("https://gitlab.lrz.de/dash", '_blank').focus();
+        }
+        else if (id === "dash") {
+          window.open("https://tumdash.com", '_blank').focus();
+        }
+
       }
 
     </script>
