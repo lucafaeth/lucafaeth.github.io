@@ -107,7 +107,7 @@
     }
 
     .dash:hover {
-      background-color: #0077b6;
+      background-color: #346985;
     }
 
     .dash:hover .custom-icon {
@@ -118,6 +118,14 @@
       width: 22px;
       height: 26px;
       object-fit: contain;
+    }
+
+    .discord:hover {
+      background-color: #5865F2; /* Discord purple */
+    }
+
+    .nextcloud:hover {
+      background-color: #0082c9; /* Nextcloud blue */
     }
 
   </style>
@@ -210,6 +218,16 @@
         </span>
       </div>
 
+      <!-- Discord Icon -->
+      <div id="discord" onclick="navigate(this.id)" class="social discord">
+        <span class="icon"><i class="fab fa-discord"></i></span>
+      </div>
+  
+      <!-- Nextcloud Icon -->
+      <div id="nextcloud" onclick="navigate(this.id)" class="social nextcloud">
+        <span class="icon"><i class="fab fa-nextcloud"></i></span>
+      </div>
+
     </div>
 
     </div>
@@ -261,7 +279,12 @@
         else if (id === "dash") {
           window.open("https://tumdash.com", '_blank').focus();
         }
-
+        else if (id === "discord") {
+        window.open("https://discord.gg/Xeps8Aw2", '_blank').focus();
+        }
+        else if (id === "nextcloud") {
+        window.open("https://cloud.next-prototypes.de/index.php/apps/files/files?dir=/DASH", '_blank').focus(); // Replace with your Nextcloud link
+        }
       }
 
     </script>
